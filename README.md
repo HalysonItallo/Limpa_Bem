@@ -12,7 +12,7 @@ Este projeto é um desafio de estágio da empresa Venda Mais, backend [Django](h
 
 > Customer Service
 >  - Service
->  - responsible_attendant
+>  - attendant_id
 >  - responsible_helper
 >  - amount (up to 10% off)
 >  - type_payment
@@ -28,6 +28,13 @@ Este projeto é um desafio de estágio da empresa Venda Mais, backend [Django](h
 
 > Status
 > - name
+
+> Attendant
+> name
+
+> Attendant
+> name
+
 
 
 

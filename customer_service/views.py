@@ -1,3 +1,11 @@
-from django.shortcuts import render
+from customer_service.models import CustomerService
+from customer_service.serializer import CustomerServiceSerializer
+from rest_framework.response import Response
 
-# Create your views here.
+
+def GetAllCustomerService(resquest, format=None):
+  return Response(CustomerServiceSerializer.getAllCustomerService()) 
+  
+
+
+
