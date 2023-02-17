@@ -3,7 +3,7 @@
 Este projeto é um desafio de estágio da empresa Venda Mais, backend [Django](https://www.djangoproject.com/).
 
 
-## Regras de negócio 
+## Models
   > Service 
   > - id
   > - name
@@ -32,8 +32,6 @@ Este projeto é um desafio de estágio da empresa Venda Mais, backend [Django](h
 > Attendant
 > name
 
-> Attendant
-> name
 
 
 
