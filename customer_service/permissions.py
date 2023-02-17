@@ -14,7 +14,7 @@ class HelperPermission(permissions.BasePermission):
     return True
       
 class AttendantsPermission(permissions.BasePermission):
-  allowed_methods = ['GET', 'POST', 'UPDATE ']
+  allowed_methods = ['GET', 'POST', 'PUT ']
   
   def has_permission(self, request, view):
     if not request.user.is_authenticated:
@@ -25,6 +25,7 @@ class AttendantsPermission(permissions.BasePermission):
       return False
     
     return True
+
 
 
 
