@@ -55,10 +55,10 @@
         "is_staff": false,
         "is_active": true,
         "date_joined": "2023-02-18T18:20:22Z",
-        "cellphone": "",
-        "adress": "",
+        "cellphone": "999999999",
+        "adress": "adress here",
         "groups": [
-            2
+            4
         ],
         "user_permissions": []
     }
@@ -80,7 +80,7 @@
         "cellphone": "",
         "adress": "",
         "groups": [
-            3
+            2
         ],
         "user_permissions": []
     }
@@ -102,7 +102,7 @@
         "cellphone": "",
         "adress": "",
         "groups": [
-            4
+            3
         ],
         "user_permissions": []
     }
