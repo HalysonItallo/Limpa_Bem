@@ -1,24 +1,20 @@
 from rest_framework.viewsets import ModelViewSet
 from services.models import Service
-from services.permission import ManagerPermission, AllUsersPermission
 from services.serializer import ServiceSerializer
+from users.permission import IsAuthenticated
+from services.permission import ManagerPermission
 
-
-class ServiceManagerViewSet(ModelViewSet):
-  permission_classes = [ManagerPermission]
-
+class ServiceViewSet(ModelViewSet):
   queryset = Service.objects.all()
   serializer_class = ServiceSerializer
 
   def perform_create(self, serializer):
     serializer.save()
 
+  def get_permissions(self):
+    if self.action == 'list':
+      permission_classes = [IsAuthenticated]
+    else:
+      permission_classes = [IsAuthenticated, ManagerPermission]
+    return [permission() for permission in permission_classes]
 
-class ServiceAllUsersViewSet(ModelViewSet):
-  permission_classes = [AllUsersPermission]
-
-  queryset = Service.objects.all()
-  serializer_class = ServiceSerializer
-
-  def perform_create(self, serializer):
-    serializer.save()

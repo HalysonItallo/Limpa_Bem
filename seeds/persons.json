@@ -1,0 +1,110 @@
+[
+{
+    "model": "users.person",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$72EyCjdK4e0twgUmfKBL7V$CLspeXcOzqCohlJP8bcJdX3lNKymaZSfxqp9kesj7No=",
+        "last_login": "2023-02-18T18:13:43.465Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "admin@admin.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-02-18T18:13:38.275Z",
+        "cellphone": "",
+        "adress": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.person",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$UzMffV8xQR8B5X7qUPCCJj$5FWDX6kZsoh2y0wDq1MhuvPlBtlBNMHGADiLV+EWPho=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "gerente",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-02-18T18:16:27Z",
+        "cellphone": "",
+        "adress": "",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.person",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$cxQgu1HuB4thc2YUPe7ayw$0XvQiwME5Aita7ykobmnvl+js34rnl69NzsUqgpKAlk=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "cliente",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-02-18T18:20:22Z",
+        "cellphone": "",
+        "adress": "",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.person",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$51KMSpaePd37RmWE2O15GA$uD+eosJ25lc74DJRwltV7SFs0ruToFyU3UknNLMyXUg=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "atendente",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-02-18T18:20:40Z",
+        "cellphone": "",
+        "adress": "",
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.person",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$390000$ESkt54dRUTfokdBPtWItOC$fFjnAQ22A7mZLo6XX0aUvy8/RZvZI/EMh2wW2VtxJm0=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "helper",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-02-18T18:20:58Z",
+        "cellphone": "",
+        "adress": "",
+        "groups": [
+            4
+        ],
+        "user_permissions": []
+    }
+}
+]

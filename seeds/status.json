@@ -1,0 +1,23 @@
+[
+  {
+    "model": "status.status",
+    "pk": 1,
+    "fields": {
+      "name": "pendente"
+    }
+  },
+  {
+    "model": "status.status",
+    "pk": 2,
+    "fields": {
+      "name": "realizado"
+    }
+  },
+  {
+    "model": "status.status",
+    "pk": 3,
+    "fields": {
+      "name": "cancelado"
+    }
+  }
+]

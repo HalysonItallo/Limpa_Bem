@@ -1,0 +1,20 @@
+[
+  {
+    "model": "services.service",
+    "pk": 1,
+    "fields": {
+      "name": "Limpeza Simples",
+      "value": 100.00,
+      "isAvaliable": true
+    }
+  },
+  {
+    "model": "services.service",
+    "pk": 2,
+    "fields": {
+      "name": "Limpeza Profunda",
+      "value": 250.00,
+      "isAvaliable": true
+    }
+  }
+]

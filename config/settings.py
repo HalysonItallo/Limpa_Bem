@@ -45,10 +45,9 @@ INSTALLED_APPS = [
     'services',
     'customer_service',
     'status',
-    'clients',
-    'attendants',
     'users',
     'rest_framework.authtoken',
+    'django_seed'
 ]
 
 MIDDLEWARE = [
@@ -120,6 +119,10 @@ REST_FRAMEWORK = {
 }
 
 AUTH_USER_MODEL = 'users.Person'
+
+FIXTURE_DIRS = [
+    'fixtures',
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/

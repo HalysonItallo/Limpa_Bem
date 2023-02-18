@@ -33,6 +33,8 @@ Este projeto é um desafio de estágio da empresa Venda Mais, backend [Django](h
 > name
 
 
+python manage.py loaddata seeds/*.json
+
 
 
 
