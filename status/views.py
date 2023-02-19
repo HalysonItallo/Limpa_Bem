@@ -3,7 +3,7 @@ from status.models import Status
 from status.serializer import StatusSerializer
 from status.permission import AttendantPermission
 
-class StatusAttendantViewSet(viewsets.ModelViewSet):
+class StatusViewSet(viewsets.ModelViewSet):
   permission_classes = [AttendantPermission]
 
   queryset = Status.objects.all()
