@@ -1,8 +1,8 @@
 from rest_framework.viewsets import ModelViewSet
 from services.models import Service
 from services.serializer import ServiceSerializer
-from users.permission import IsAuthenticated
-from services.permission import ManagerPermission
+from users.permissions import IsAuthenticated
+from services.permissions import ManagerPermission
 
 class ServiceViewSet(ModelViewSet):
   queryset = Service.objects.all()

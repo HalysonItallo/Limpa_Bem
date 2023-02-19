@@ -8,6 +8,8 @@ class AttendantsPermission(permissions.BasePermission):
       return False
     elif not(request.user and request.user.groups.filter(name='atendente')):
       return False
+    
+    return True
 
 class ClientPermission(permissions.BasePermission):
   allowed_methods = ['GET', 'POST']
@@ -17,6 +19,9 @@ class ClientPermission(permissions.BasePermission):
       return False
     elif not(request.user and request.user.groups.filter(name='cliente')):
       return False
+    
+    return True
+
 
     
 

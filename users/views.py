@@ -1,7 +1,7 @@
 from users.serializer import PersonSerializer
 from rest_framework.viewsets import ModelViewSet
 from users.models import Person
-from users.permission import IsAuthenticated, ClientPermission, ManagerPermission, AttendantAndHelperPermission
+from users.permissions import IsAuthenticated, ClientPermission, ManagerPermission, AttendantAndHelperPermission
 
 
 class PersonViewSet(ModelViewSet):

@@ -9,15 +9,14 @@ class CustomerService(models.Model):
     Service, 
     on_delete=models.DO_NOTHING, 
     default=1, 
-    null=True,
   )
-  attendant_id = models.ForeignKey(Person, on_delete=models.DO_NOTHING, related_name='attendant')
-  responsible_helper = models.CharField(max_length=30)
+  attendant_id = models.ForeignKey(Person, on_delete=models.DO_NOTHING, related_name='attendant', null=True)
+  helper_id = models.ForeignKey(Person, on_delete=models.DO_NOTHING, related_name='helper', null=True)
   amount = models.DecimalField(max_digits=5,decimal_places=2)
   type_payment = models.CharField(max_length=30)
   created_at = models.DateTimeField(auto_now=True)
   will_carried_at = models.DateTimeField()
-  status_id = models.ForeignKey(Status, on_delete=models.DO_NOTHING,)
+  status_id = models.ForeignKey(Status, on_delete=models.DO_NOTHING, )
   client_id = models.ForeignKey(Person, on_delete=models.DO_NOTHING, related_name='client')
   
   def __str__(self):
