@@ -6,6 +6,6 @@ User = get_user_model()
 class PersonSerializer(ModelSerializer):
   class Meta: 
     model = User
-    fields = ('id', 'email', 'groups')
+    fields = ('id', 'email', 'groups', 'username', "first_name", "cellphone", "adress")
     extras_kwargs = {'password': {'write_only': True}}
   
