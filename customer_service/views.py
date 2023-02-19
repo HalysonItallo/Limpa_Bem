@@ -1,13 +1,12 @@
 from rest_framework.viewsets import ModelViewSet
 from customer_service.models import CustomerService
-from customer_service.serializer import CustomerServiceSerializer
+from customer_service.serializer import RequestCustomerServiceSerializer, ResponseCustomerServiceSerializer
 from customer_service.permissions import AttendantsPermission, ClientPermission
 from users.permissions import IsAuthenticated
 
 class CustomerServiceViewSet(ModelViewSet):
   queryset = CustomerService.objects.all()
-  serializer_class = CustomerServiceSerializer
-
+ 
   def perform_create(self, serializer):
     serializer.save()
 
@@ -20,4 +19,10 @@ class CustomerServiceViewSet(ModelViewSet):
     else:
       permission_classes = [IsAuthenticated, AttendantsPermission]
     return [permission() for permission in permission_classes]
+
+  def get_serializer_class(self):
+    if self.request.method == "GET":
+      return ResponseCustomerServiceSerializer
+
+    return RequestCustomerServiceSerializer
 
