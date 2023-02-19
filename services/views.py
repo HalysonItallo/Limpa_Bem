@@ -13,7 +13,7 @@ class ServiceViewSet(ModelViewSet):
 
   def get_permissions(self):
     if self.action == 'list':
-      permission_classes = [IsAuthenticated]
+      permission_classes = []
     else:
       permission_classes = [IsAuthenticated, ManagerPermission]
     return [permission() for permission in permission_classes]
