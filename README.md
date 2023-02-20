@@ -137,6 +137,12 @@ Precisamos popular o banco de dados com informações importantes para o teste, 
 python manage.py loaddata seeds/*.json
 ```
 
+Crie no diretório config dentro do diretório raiz da aplicação um arquivo .env e coloque o seguinte conteúdo
+
+```sh
+SECRET_KEY=django-insecure-$#&%iyodi0#apv5$4@^xatv%bib7iul(n74!6k3n)am63e^6mv
+```
+
 Depois podemos rodar o projeto
 ```sh
 python manage.py runserver
@@ -159,6 +165,8 @@ python manage.py runserver
 
 > - username: helper
 > - password: gQp2DW7G38*5
+
+
 
 
 ### Link do Front-end:
