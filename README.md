@@ -123,6 +123,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Crie no diretório config dentro do diretório raiz da aplicação um arquivo .env e coloque o seguinte conteúdo
+
+```sh
+# ./config/.env
+
+SECRET_KEY=django-insecure-$#&%iyodi0#apv5$4@^xatv%bib7iul(n74!6k3n)am63e^6mv
+```
+
 Precisamos rodar as migrações e criar o banco:
 
 ```sh
@@ -135,12 +143,6 @@ Precisamos popular o banco de dados com informações importantes para o teste, 
 
 ```sh
 python manage.py loaddata seeds/*.json
-```
-
-Crie no diretório config dentro do diretório raiz da aplicação um arquivo .env e coloque o seguinte conteúdo
-
-```sh
-SECRET_KEY=django-insecure-$#&%iyodi0#apv5$4@^xatv%bib7iul(n74!6k3n)am63e^6mv
 ```
 
 Depois podemos rodar o projeto
