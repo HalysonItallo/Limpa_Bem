@@ -18,7 +18,7 @@ class PersonViewSet(ModelViewSet):
     if self.action == 'list':
       permission_classes = [IsAuthenticated, ManagerPermission | AttendantAndHelperPermission]
     elif self.action == 'retrieve':
-      permission_classes = [IsAuthenticated, ClientPermission]
+      permission_classes = [IsAuthenticated]
     elif self.action == 'create':
       permission_classes = [ClientPermission]
     else:
