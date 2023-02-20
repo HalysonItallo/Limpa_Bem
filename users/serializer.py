@@ -4,7 +4,7 @@ from  django.contrib.auth import get_user_model
 User = get_user_model()
 
 class PersonSerializer(ModelSerializer):
-  group_name = CharField(source='groups.first.name')
+  group_name = CharField(source='groups.first')
   class Meta: 
     model = User
     fields = ('id', 'email', 'username', "first_name", "cellphone", "adress", "password", "group_name")
