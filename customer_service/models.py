@@ -18,5 +18,4 @@ class CustomerService(models.Model):
   status = models.ForeignKey(Status, on_delete=models.DO_NOTHING, default=1)
   client = models.ForeignKey(Person, on_delete=models.DO_NOTHING, related_name='client')
   
-  def __str__(self):
-    return self.created_at
+  
